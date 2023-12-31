@@ -34,7 +34,7 @@ import sailpoint.object.ApplicationActivity.Result;
 import java.text.SimpleDateFormat;
 import java.io;
 import sailpoint.object.Configuration;
-import java.util.List;
+import java.util.ArrayList;
 
 activity.setAction(Action.Grant);
 activity.setResult(Result.Success);
