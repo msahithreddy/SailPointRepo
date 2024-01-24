@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE ManagedAttribute PUBLIC "sailpoint.dtd" "sailpoint.dtd">
+<ManagedAttribute attribute="Designation" hash="551043a1281a44bb9c9274d1965877d03759b282" requestable="true" type="Entitlement" value="Associate">
+  <ApplicationRef>
+    <Reference class="sailpoint.object.Application" name="JDBC Application"/>
+  </ApplicationRef>
+</ManagedAttribute>

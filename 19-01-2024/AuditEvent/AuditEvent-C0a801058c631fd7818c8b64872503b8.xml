@@ -1,0 +1,3 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE AuditEvent PUBLIC "sailpoint.dtd" "sailpoint.dtd">
+<AuditEvent action="ServerUpDown" serverHost="Babbu" source="Babbu" target="ServerDown"/>

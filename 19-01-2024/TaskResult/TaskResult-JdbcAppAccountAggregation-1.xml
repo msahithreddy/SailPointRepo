@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE TaskResult PUBLIC "sailpoint.dtd" "sailpoint.dtd">
+<TaskResult completed="1702973999250" completionStatus="Success" host="Babbu" launched="1702973996920" launcher="spadmin" name="JDBC App Account Aggregation - 1" runLength="2" schedule="ef02b27078824a148618c97ce2f21f12" type="AccountAggregation">
+  <Attributes>
+    <Map>
+      <entry key="applications" value="JDBC Application"/>
+      <entry key="created" value="4"/>
+      <entry key="exceptionChanges" value="4"/>
+      <entry key="identityEntitlementsCreated" value="4"/>
+      <entry key="internalUpdates" value="1"/>
+      <entry key="total" value="4"/>
+    </Map>
+  </Attributes>
+  <Definition>
+    <Reference class="sailpoint.object.TaskDefinition" name="JDBC App Account Aggregation"/>
+  </Definition>
+  <Owner>
+    <Reference class="sailpoint.object.Identity" name="spadmin"/>
+  </Owner>
+  <Report>
+    <Reference class="sailpoint.object.JasperResult"/>
+  </Report>
+</TaskResult>

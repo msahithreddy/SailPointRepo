@@ -1,0 +1,5 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE SyslogEvent PUBLIC "sailpoint.dtd" "sailpoint.dtd">
+<SyslogEvent classname="sailpoint.web.ApplicationObjectBean" eventLevel="ERROR" lineNumber="2518" quickKey="0000000152" server="Babbu" thread="http-nio-8080-exec-1" username="spadmin">
+  <EventMessage>Exception while discovering schema [sailpoint.connector.ConnectorException: Error while trying to discover the columns. SQL[null]sailpoint.connector.ConnectorException: Failure trying to get a pooled connection to [jdbc:MySql:Babbu:3306/sakila] java.sql.SQLException: No suitable driver found for jdbc:MySql:Babbu:3306/sakila]</EventMessage>
+</SyslogEvent>

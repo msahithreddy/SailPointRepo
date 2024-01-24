@@ -1,0 +1,5 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE SyslogEvent PUBLIC "sailpoint.dtd" "sailpoint.dtd">
+<SyslogEvent classname="sailpoint.connector.util.JDBCUtil" eventLevel="ERROR" lineNumber="289" quickKey="0000000144" server="Babbu" thread="http-nio-8080-exec-3" username="spadmin">
+  <EventMessage>Exception at connection pooling:-Failure trying to get a pooled connection to [jdbc:MySql:Babbu:3306/sakila] java.sql.SQLException: No suitable driver found for jdbc:MySql:Babbu:3306/sakila</EventMessage>
+</SyslogEvent>

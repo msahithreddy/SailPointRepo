@@ -1,0 +1,5 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE SyslogEvent PUBLIC "sailpoint.dtd" "sailpoint.dtd">
+<SyslogEvent classname="sailpoint.connector.util.DBCPPoolVersion2" eventLevel="ERROR" lineNumber="160" quickKey="0000000226" server="Babbu" thread="http-nio-8080-exec-7" username="spadmin">
+  <EventMessage>Connection Pool Status before Exception [ maxIdle=5| maxTotal=10| minIdle=0| numActive=0| numIdle=0| numWaiters=0].</EventMessage>
+</SyslogEvent>

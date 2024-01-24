@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE Identity PUBLIC "sailpoint.dtd" "sailpoint.dtd">
+<Identity correlated="true" lastRefresh="1702975462638" name="a2">
+  <Attributes>
+    <Map>
+      <entry key="displayName" value="Champ Babbu"/>
+      <entry key="email" value="champ@gmail.com"/>
+      <entry key="firstname" value="Champ"/>
+      <entry key="lastname" value="Babbu"/>
+    </Map>
+  </Attributes>
+  <AttributeMetaDatas>
+    <AttributeMetaData attribute="email" source="HR Source:email"/>
+    <AttributeMetaData attribute="firstname" source="HR Source:FirstName"/>
+    <AttributeMetaData attribute="lastname" source="HR Source:LastName"/>
+  </AttributeMetaDatas>
+  <Links>
+    <Link displayName="a2" identity="a2" lastRefresh="1702974772900">
+      <ApplicationRef>
+        <Reference class="sailpoint.object.Application" name="HR Source"/>
+      </ApplicationRef>
+      <Attributes>
+        <Map>
+          <entry key="Active" value="Y"/>
+          <entry key="Designation" value="Associate"/>
+          <entry key="FirstName" value="Champ"/>
+          <entry key="Gender" value="FeMale"/>
+          <entry key="LastName" value="Babbu"/>
+          <entry key="VID" value="a2"/>
+          <entry key="email" value="champ@gmail.com"/>
+        </Map>
+      </Attributes>
+    </Link>
+  </Links>
+  <Scorecard/>
+</Identity>

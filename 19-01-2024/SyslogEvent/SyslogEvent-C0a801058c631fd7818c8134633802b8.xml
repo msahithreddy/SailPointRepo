@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE SyslogEvent PUBLIC "sailpoint.dtd" "sailpoint.dtd">
+<SyslogEvent classname="sailpoint.api.Aggregator" eventLevel="ERROR" lineNumber="1916" quickKey="0000000254" server="Babbu" thread="QuartzScheduler_Worker-2" username="Scheduler">
+  <EventMessage>Exception during aggregation. Reason: java.lang.RuntimeException: sailpoint.connector.ConnectorException: BeanShell script error: bsh.EvalError: Sourced file: inline evaluation of: ``import Sailpoint.object.*;  String active=object.getStringAttribute("Active");   . . . '' : Attempt to resolve method: isNotNullorEmpty() on undefined variable or class name: Util : at Line: 3 : in file: inline evaluation of: ``import Sailpoint.object.*;  String a...</EventMessage>
+  <Stacktrace>java.lang.RuntimeException: sailpoint.connector.ConnectorException: BeanShell script error: bsh.EvalError: Sourced file: inline evaluation of: ``import Sailpoint.object.*;  String active=object.getStringAttribute("Active");   . . . '' : Attempt to resolve method: isNotNullorEmpty() on undefined variable or class name: Util : at Line: 3 : in file: inline evaluation of: ``import Sailpoint.object.*;  String active=object.getStringAttribute("Active");   . . . '' : Util .isNotNullorEmpty ( active ) 
+ BSF info: HR_Customozation_Rule at line: 0 column: columnNo
+	at sailpoint.connector.ConnectorProxy$CustomizingIterator.peek(ConnectorProxy.java:1347)
+	at sailpoint.connector.ConnectorProxy$CustomizingIterator.hasNext(ConnectorProxy.java:1355)
+	at sailpoint.api.Aggregator.aggregateAccounts(Aggregator.java:3264)
+	at sailpoint.api.Aggregator.primaryAccountAggregation(Aggregator.java:2935)
+	at sailpoint.api.Aggregator.aggregateApplication(Aggregator.java:2783)
+	at sailpoint.api.Aggregator.phaseAggregate(Aggregator.java:2653)
+	at sailpoint.api.Aggregator.execute(Aggregator.java:2200)
+	at sailpoint.task.ResourceIdentityScan.doUnpartitioned(ResourceIdentityScan.java:248)
+	at sailpoint.task.ResourceIdentityScan.execute(ResourceIdentityScan.java:228)
+	at sailpoint.api.TaskManager.runSync(TaskManager.java:909)
+	at sailpoint.api.TaskManager.runSync(TaskManager.java:724)
+	at sailpoint.scheduler.JobAdapter.execute(JobAdapter.java:128)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: sailpoint.connector.ConnectorException: BeanShell script error: bsh.EvalError: Sourced file: inline evaluation of: ``import Sailpoint.object.*;  String active=object.getStringAttribute("Active");   . . . '' : Attempt to resolve method: isNotNullorEmpty() on undefined variable or class name: Util : at Line: 3 : in file: inline evaluation of: ``import Sailpoint.object.*;  String active=object.getStringAttribute("Active");   . . . '' : Util .isNotNullorEmpty ( active ) 
+ BSF info: HR_Customozation_Rule at line: 0 column: columnNo
+	at sailpoint.connector.ConnectorProxy.runCustomizationRule(ConnectorProxy.java:942)
+	at sailpoint.connector.ConnectorProxy.access$100(ConnectorProxy.java:87)
+	at sailpoint.connector.ConnectorProxy$CustomizingIterator.peek(ConnectorProxy.java:1332)
+	... 13 more
+Caused by: sailpoint.tools.GeneralException: BeanShell script error: bsh.EvalError: Sourced file: inline evaluation of: ``import Sailpoint.object.*;  String active=object.getStringAttribute("Active");   . . . '' : Attempt to resolve method: isNotNullorEmpty() on undefined variable or class name: Util : at Line: 3 : in file: inline evaluation of: ``import Sailpoint.object.*;  String active=object.getStringAttribute("Active");   . . . '' : Util .isNotNullorEmpty ( active ) 
+ BSF info: HR_Customozation_Rule at line: 0 column: columnNo
+	at sailpoint.server.BSFRuleRunner.runRule(BSFRuleRunner.java:219)
+	at sailpoint.server.InternalContext.runRule(InternalContext.java:1268)
+	at sailpoint.server.InternalContext.runRule(InternalContext.java:1240)
+	at sailpoint.connector.DefaultConnectorServices.runRule(DefaultConnectorServices.java:107)
+	at sailpoint.connector.DefaultConnectorServices.runRule(DefaultConnectorServices.java:87)
+	at sailpoint.connector.ConnectorProxy.runCustomizationRule(ConnectorProxy.java:940)
+	... 15 more
+Caused by: org.apache.bsf.BSFException: BeanShell script error: bsh.EvalError: Sourced file: inline evaluation of: ``import Sailpoint.object.*;  String active=object.getStringAttribute("Active");   . . . '' : Attempt to resolve method: isNotNullorEmpty() on undefined variable or class name: Util : at Line: 3 : in file: inline evaluation of: ``import Sailpoint.object.*;  String active=object.getStringAttribute("Active");   . . . '' : Util .isNotNullorEmpty ( active ) 
+ BSF info: HR_Customozation_Rule at line: 0 column: columnNo
+	at bsh.util.BeanShellBSFEngine.eval(BeanShellBSFEngine.java:202)
+	at org.apache.bsf.BSFManager$5.run(BSFManager.java:445)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at org.apache.bsf.BSFManager.eval(BSFManager.java:442)
+	at sailpoint.server.BSFRuleRunner.eval(BSFRuleRunner.java:245)
+	at sailpoint.server.BSFRuleRunner.runRule(BSFRuleRunner.java:216)
+	... 20 more
+</Stacktrace>
+</SyslogEvent>

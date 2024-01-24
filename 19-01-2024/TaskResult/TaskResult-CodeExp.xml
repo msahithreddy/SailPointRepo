@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE TaskResult PUBLIC "sailpoint.dtd" "sailpoint.dtd">
+<TaskResult host="Babbu" launched="1705659814778" launcher="spadmin" live="true" name="CODE EXP" schedule="439839885ba5411caa2dec1ff6265598" type="Generic">
+  <Definition>
+    <Reference class="sailpoint.object.TaskDefinition" name="CODE EXP"/>
+  </Definition>
+  <Owner>
+    <Reference class="sailpoint.object.Identity" name="spadmin"/>
+  </Owner>
+  <Progress>Exporting class Tag</Progress>
+</TaskResult>

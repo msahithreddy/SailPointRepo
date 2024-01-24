@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE Rule PUBLIC "sailpoint.dtd" "sailpoint.dtd">
+<Rule language="beanshell" name="Sahith">
+  <Source><![CDATA[
+  import java.util.*;
+  
+  log.error("SAHITHHHHH");
+  System.out.println("SAAAAAHITH");
+  return "SAHITH";
+  ]]></Source>
+</Rule>

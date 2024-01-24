@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE AuditEvent PUBLIC "sailpoint.dtd" "sailpoint.dtd">
+<AuditEvent accountName="PA" action="EntitlementAdd" application="JDBC Application" attributeName="Designation" attributeValue="Sr.Associate" clientHost="0:0:0:0:0:0:0:1" interface="LCM" serverHost="Babbu" source="spadmin" target="PA">
+  <Attributes>
+    <Map>
+      <entry key="attachmentConfigList"/>
+      <entry key="attachments"/>
+      <entry key="flow" value="AccessRequest"/>
+      <entry key="id" value="c0a801058c631fd7818c813c879c02e2"/>
+      <entry key="interface" value="LCM"/>
+      <entry key="operation" value="EntitlementAdd"/>
+    </Map>
+  </Attributes>
+</AuditEvent>

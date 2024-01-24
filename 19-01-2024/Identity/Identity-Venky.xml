@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE Identity PUBLIC "sailpoint.dtd" "sailpoint.dtd">
+<Identity correlated="true" lastRefresh="1702975462510" name="Venky">
+  <Attributes>
+    <Map>
+      <entry key="displayName" value="Venky Gumma"/>
+      <entry key="firstname" value="Venky"/>
+      <entry key="lastname" value="Gumma"/>
+    </Map>
+  </Attributes>
+  <AttributeMetaDatas>
+    <AttributeMetaData attribute="firstname" source="JDBC Application:First Name"/>
+    <AttributeMetaData attribute="lastname" source="JDBC Application:Last Name"/>
+  </AttributeMetaDatas>
+  <Exceptions>
+    <EntitlementGroup displayName="Venky" nativeIdentity="Venky">
+      <ApplicationRef>
+        <Reference class="sailpoint.object.Application" name="JDBC Application"/>
+      </ApplicationRef>
+      <Attributes>
+        <Map>
+          <entry key="Designation" value="Associate"/>
+        </Map>
+      </Attributes>
+    </EntitlementGroup>
+  </Exceptions>
+  <Links>
+    <Link displayName="Venky" entitlements="true" identity="Venky" lastRefresh="1702973997177">
+      <ApplicationRef>
+        <Reference class="sailpoint.object.Application" name="JDBC Application"/>
+      </ApplicationRef>
+      <Attributes>
+        <Map>
+          <entry key="Designation" value="Associate"/>
+          <entry key="First Name" value="Venky"/>
+          <entry key="Last Name" value="Gumma"/>
+          <entry key="idsymphony" value="a2"/>
+        </Map>
+      </Attributes>
+    </Link>
+  </Links>
+  <Scorecard certificationScore="1000" compositeScore="250" entitlementScore="1" rawEntitlementScore="1">
+    <ScoreItem compositePercentage="100" displayName="score_def_certificationAge_name" score="1000" scorePercentage="100" type="score_def_certificationAge_shortname">
+      <TargetMessage>
+        <Message key="cert_scorer_target_id_not_certified" type="Info"/>
+      </TargetMessage>
+    </ScoreItem>
+  </Scorecard>
+</Identity>

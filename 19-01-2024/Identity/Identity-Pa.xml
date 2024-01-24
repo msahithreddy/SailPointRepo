@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE Identity PUBLIC "sailpoint.dtd" "sailpoint.dtd">
+<Identity correlated="true" lastRefresh="1703744778242" name="PA">
+  <Attributes>
+    <Map>
+      <entry key="displayName" value="Champ Babbu"/>
+      <entry key="firstname" value="Champ"/>
+      <entry key="lastname" value="Babbu"/>
+    </Map>
+  </Attributes>
+  <AttributeMetaDatas>
+    <AttributeMetaData attribute="firstname" source="JDBC Application:First Name"/>
+    <AttributeMetaData attribute="lastname" source="JDBC Application:Last Name"/>
+  </AttributeMetaDatas>
+  <Exceptions>
+    <EntitlementGroup displayName="PA" nativeIdentity="PA">
+      <ApplicationRef>
+        <Reference class="sailpoint.object.Application" name="JDBC Application"/>
+      </ApplicationRef>
+      <Attributes>
+        <Map>
+          <entry key="Designation" value="PA"/>
+        </Map>
+      </Attributes>
+    </EntitlementGroup>
+  </Exceptions>
+  <Preferences>
+    <Map>
+      <entry key="attributeAssignments">
+        <value>
+          <List>
+            <AttributeAssignment applicationId="c0a801058c631fd7818c6365f168008c" applicationName="JDBC Application" assigner="spadmin" name="Designation" nativeIdentity="PA" source="LCM" type="Entitlement" value="Sr.Associate"/>
+          </List>
+        </value>
+      </entry>
+    </Map>
+  </Preferences>
+  <Links>
+    <Link displayName="PA" entitlements="true" identity="PA" lastRefresh="1702975277001">
+      <ApplicationRef>
+        <Reference class="sailpoint.object.Application" name="JDBC Application"/>
+      </ApplicationRef>
+      <Attributes>
+        <Map>
+          <entry key="Designation" value="PA"/>
+          <entry key="First Name" value="Champ"/>
+          <entry key="Last Name" value="Babbu"/>
+          <entry key="idsymphony" value="a4"/>
+        </Map>
+      </Attributes>
+    </Link>
+  </Links>
+  <Scorecard certificationScore="1000" compositeScore="250" entitlementScore="1" rawEntitlementScore="1">
+    <ScoreItem compositePercentage="100" displayName="score_def_certificationAge_name" score="1000" scorePercentage="100" type="score_def_certificationAge_shortname">
+      <TargetMessage>
+        <Message key="cert_scorer_target_id_not_certified" type="Info"/>
+      </TargetMessage>
+    </ScoreItem>
+  </Scorecard>
+</Identity>

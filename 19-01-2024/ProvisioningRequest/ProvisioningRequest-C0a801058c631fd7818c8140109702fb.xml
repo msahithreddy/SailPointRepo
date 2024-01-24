@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE ProvisioningRequest PUBLIC "sailpoint.dtd" "sailpoint.dtd">
+<ProvisioningRequest expiration="1703580308630" requester="spadmin" target="JDBC Application">
+  <IdentityRef>
+    <Reference class="sailpoint.object.Identity" name="PA"/>
+  </IdentityRef>
+  <ProvisioningPlan nativeIdentity="PA" targetIntegration="JDBC Application" trackingId="3b7c71fdb4c04845b7744929348f0a5d">
+    <AccountRequest application="JDBC Application" nativeIdentity="PA" op="Modify" targetIntegration="JDBC Application">
+      <Attributes>
+        <Map>
+          <entry key="attachmentConfigList"/>
+          <entry key="attachments"/>
+          <entry key="flow" value="AccessRequest"/>
+          <entry key="id" value="c0a801058c631fd7818c813c879c02e2"/>
+          <entry key="interface" value="LCM"/>
+          <entry key="operation" value="EntitlementAdd"/>
+        </Map>
+      </Attributes>
+      <AttributeRequest name="Designation" op="Add" value="Sr.Associate">
+        <Attributes>
+          <Map>
+            <entry key="assignment" value="true"/>
+            <entry key="comments" value="TEST"/>
+          </Map>
+        </Attributes>
+      </AttributeRequest>
+    </AccountRequest>
+    <Attributes>
+      <Map>
+        <entry key="identityRequestId" value="0000000001"/>
+        <entry key="requester" value="spadmin"/>
+        <entry key="source" value="LCM"/>
+      </Map>
+    </Attributes>
+    <Requesters>
+      <Reference class="sailpoint.object.Identity" name="spadmin"/>
+    </Requesters>
+    <ProvisioningResult status="queued"/>
+  </ProvisioningPlan>
+</ProvisioningRequest>

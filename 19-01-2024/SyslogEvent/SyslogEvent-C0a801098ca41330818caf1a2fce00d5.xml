@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE SyslogEvent PUBLIC "sailpoint.dtd" "sailpoint.dtd">
+<SyslogEvent classname="sailpoint.api.Identitizer" eventLevel="ERROR" lineNumber="6311" quickKey="0000000264" server="Babbu" thread="QuartzScheduler_Worker-5" username="Scheduler">
+  <EventMessage>Unable to refresh link: </EventMessage>
+  <Stacktrace>sailpoint.connector.ConnectorException: Table 'jdbc_app.account' doesn't exist
+	at sailpoint.connector.JDBCConnector.executeStatement(JDBCConnector.java:2590)
+	at sailpoint.connector.JDBCConnector.execute(JDBCConnector.java:3743)
+	at sailpoint.connector.JDBCConnector.getObject(JDBCConnector.java:512)
+	at sailpoint.connector.ConnectorProxy.getObject(ConnectorProxy.java:579)
+	at sailpoint.api.Identitizer.reload(Identitizer.java:6283)
+	at sailpoint.api.Identitizer.reload(Identitizer.java:6206)
+	at sailpoint.api.Identitizer.refresh(Identitizer.java:2292)
+	at sailpoint.api.IdentityRequestProvisioningScanner.scan(IdentityRequestProvisioningScanner.java:245)
+	at sailpoint.task.IdentityRequestMaintenance.scanRequests(IdentityRequestMaintenance.java:562)
+	at sailpoint.task.IdentityRequestMaintenance.doUnPartitioned(IdentityRequestMaintenance.java:345)
+	at sailpoint.task.IdentityRequestMaintenance.execute(IdentityRequestMaintenance.java:266)
+	at sailpoint.api.TaskManager.runSync(TaskManager.java:909)
+	at sailpoint.api.TaskManager.runSync(TaskManager.java:724)
+	at sailpoint.scheduler.JobAdapter.execute(JobAdapter.java:128)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.sql.SQLSyntaxErrorException: Table 'jdbc_app.account' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:371)
+	at org.apache.commons.dbcp2.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:94)
+	at org.apache.commons.dbcp2.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:94)
+	at sailpoint.connector.JDBCConnector.executeStatement(JDBCConnector.java:2550)
+	... 15 more
+</Stacktrace>
+</SyslogEvent>

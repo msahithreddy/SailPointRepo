@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE TaskResult PUBLIC "sailpoint.dtd" "sailpoint.dtd">
+<TaskResult completed="1702975462948" completionStatus="Success" host="Babbu" launched="1702975462144" launcher="spadmin" name="Refresh Identity Cube" schedule="9bfe6f63b6504a4d98ce48de42375937" type="Identity">
+  <Attributes>
+    <Map>
+      <entry key="policies"/>
+      <entry key="total" value="11"/>
+    </Map>
+  </Attributes>
+  <Definition>
+    <Reference class="sailpoint.object.TaskDefinition" name="Refresh Identity Cube"/>
+  </Definition>
+  <Owner>
+    <Reference class="sailpoint.object.Identity" name="spadmin"/>
+  </Owner>
+</TaskResult>

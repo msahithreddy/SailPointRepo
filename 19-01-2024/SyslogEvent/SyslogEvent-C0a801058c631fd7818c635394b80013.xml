@@ -1,0 +1,5 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE SyslogEvent PUBLIC "sailpoint.dtd" "sailpoint.dtd">
+<SyslogEvent classname="sailpoint.connector.DelimitedFileConnector" eventLevel="ERROR" lineNumber="846" quickKey="0000000086" server="Babbu" thread="http-nio-8080-exec-10" username="spadmin">
+  <EventMessage>Identity attribute [] was not found. Object [{VID=a1, Designation=PA, FirstName=Sahith, LastName=Reddy, Gender=Male, email=sahith@gmail.com}]</EventMessage>
+</SyslogEvent>

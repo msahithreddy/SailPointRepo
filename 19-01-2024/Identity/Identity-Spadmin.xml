@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE Identity PUBLIC "sailpoint.dtd" "sailpoint.dtd">
+<Identity lastLogin="1705659379557" lastRefresh="1702975462931" name="spadmin" password="1:ACP:Gw3YHh7W/Iy0jtZ1OkuO/ulWggT/0QmcaGbR6TE4RyE=" protected="true">
+  <Attributes>
+    <Map>
+      <entry key="displayName" value="The Administrator"/>
+      <entry key="firstname" value="The"/>
+      <entry key="lastname" value="Administrator"/>
+    </Map>
+  </Attributes>
+  <UIPreferencesRef>
+    <Reference class="sailpoint.object.UIPreferences"/>
+  </UIPreferencesRef>
+  <Capabilities>
+    <Reference class="sailpoint.object.Capability" name="SystemAdministrator"/>
+  </Capabilities>
+  <Scorecard/>
+</Identity>

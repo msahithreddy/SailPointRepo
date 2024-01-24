@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE IdentityEntitlement PUBLIC "sailpoint.dtd" "sailpoint.dtd">
+<IdentityEntitlement aggregationState="Disconnected" assigner="The Administrator" name="Designation" nativeIdentity="PA" source="LCM" type="Entitlement" value="Sr.Associate">
+  <ApplicationRef>
+    <Reference class="sailpoint.object.Application" name="JDBC Application"/>
+  </ApplicationRef>
+  <IdentityRef>
+    <Reference class="sailpoint.object.Identity" name="PA"/>
+  </IdentityRef>
+  <PendingRequestItem>
+    <Reference class="sailpoint.object.IdentityRequestItem"/>
+  </PendingRequestItem>
+</IdentityEntitlement>

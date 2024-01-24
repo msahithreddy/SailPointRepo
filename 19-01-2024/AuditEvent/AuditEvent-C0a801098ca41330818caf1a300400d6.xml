@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE AuditEvent PUBLIC "sailpoint.dtd" "sailpoint.dtd">
+<AuditEvent action="ProvisioningFailure" interface="LCM" serverHost="Babbu" source="The Administrator" target="Champ Babbu">
+  <Attributes>
+    <Map>
+      <entry key="error1" value="This request timed out waiting for verification of one or more items."/>
+      <entry key="taskResultId" value="c0a801058c631fd7818c81400a1902f5"/>
+    </Map>
+  </Attributes>
+</AuditEvent>
